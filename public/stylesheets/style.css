@@ -1,0 +1,152 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+:root {
+  --cell-size: 100px;
+  --mark-size: calc(var(--cell-size) * 0.9);
+}
+
+body {
+  margin: 0;
+}
+
+.login-card {
+  width: 30%;
+  height: 300px;
+  display: block;
+  border: 1px solid rgb(165, 165, 165);
+  border-radius: 20px;
+  padding: 15px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.button-form {
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* margin-left: 30px; */
+  transform: translate(-50%, -50%);
+}
+
+#login-gmail {
+  width: 100%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  /* margin-left: 30px; */
+  transform: translate(-50%, -50%);
+}
+
+.card {
+  width: 80%;
+  height: 100%;
+  margin: 30px auto;
+  padding: 0px 30px 30px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black !important;
+}
+
+.card-body {
+  width: 100%;
+  height: 100%;
+  padding: 0px !important;
+}
+
+.header {
+  height: 30%;
+  width: 100%;
+  margin: 30px 0 30px 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: auto;
+  grid-gap: 1rem;
+}
+
+.history {
+  position: absolute;
+  right: 30px;
+  display: none;
+}
+
+.form-select {
+  width: 50% !important;
+}
+
+/* .score-container {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: auto;
+  grid-gap: 1rem;
+  margin: 0 0 20px 0;
+}
+
+.score {
+  border: solid 0.5px rgb(184, 184, 184);
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px;
+} */
+
+.playground {
+  display: none;
+}
+
+.status {
+  text-align: center;
+}
+
+.board {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(3, auto);
+  margin-top: 10px;
+}
+
+.cell {
+  font-family: "Permanent Marker", cursive;
+  width: 100px;
+  height: 100px;
+  box-shadow: 0 0 0 1px #333333;
+  border: 1px solid #333333;
+  cursor: pointer;
+  line-height: 100px;
+  font-size: 60px;
+  text-align: center;
+}
+
+.winning-message {
+  margin-top: 20px;
+  align-items: center;
+  display: flex;
+}
+
+#restartButton {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 150px;
+}
+
+#myModal {
+  display: none;
+}
+
+.form-control {
+  width: 100%;
+}
